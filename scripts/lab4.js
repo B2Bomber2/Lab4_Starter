@@ -6,6 +6,14 @@
  * @returns The sum of the two numbers if add is true and false otherwise.
  */
 function sumValues(num1, num2, add) {
+    if (typeof num1 !== 'number' || isNaN(num1)) {
+        return false;
+    }
+
+    if (typeof num2 !== 'number' || isNaN(num2)) {
+        return false;
+    }
+
     if (add) {
         let result = num1 + num2;
 
